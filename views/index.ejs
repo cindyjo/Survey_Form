@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style_index.css">
+</head>
+<body>
+	<div id="wrapper">
+		<form action='/result' method='post'>
+			<span class="q">Your Name: </span><input type='text' name='name'><br>
+			<span class="q">Dojo Location: </span>
+			<select name="location">
+				<option value=""></option>
+				<option value="Mountain View, CA">Mountain View</option>
+		  	 	<option value="Seattle, WA">Seattle</option>
+		  	 	<option value="Los Angeles, CA">Los Angeles</option></option>
+			</select><br>
+			<span class="q">Favorite Language: </span>
+			<select name = "lang">
+				<option value=""></option>
+				<option value="HTML/CSS3">HTML/CSS3</option>
+		  	 	<option value="jQuery">jQuery</option>
+		  	 	<option value="PHP">PHP</option>
+	  	 		<option value="MySQL">MySQL</option>
+	  	 		<option value="CodeIgniter">CodeIgniter</option>
+	  	 		<option value="Ajax">Ajax</option>
+	  	 		<option value="JavaScript">JavaScript</option>
+	  	 		<option value="Node.js">Node.js</option>
+		  	</select><br>
+		  	<span class="q">Comment (optional): </span><br>
+		  	<textarea name ="comment"></textarea><br>
+			<button type='submit'>Submit</button><br>
+		</form>
+	</div>
+</body>
+</html>
